@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.center-margin{
+    margin: 0 auto;
+    width: 70vw;
+
+}
+body{
+    background-color: #102c2f;
+    
+}
+header{
+    margin: 0;
+    width: 100vw;
+    background-color: #fffafa;    
+}
+
+.menu{    
+    display: flex;
+    justify-content:space-around;    
+    list-style: none;   
+    margin: 0;
+    height: 4.5em;
+    align-items: center;
+    padding: 0;
+    
+    
+}
+.a-menu{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5em;
+       
+}
+.a-menu:hover{
+    color:#7fffd4;
+}
+/* sobre */
+h1{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 89px;
+    
+
+}
+.main-conteiner{
+    
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+main div{
+    padding: 0 10px;
+}
+/* foto de perfil */
+main div:nth-child(2){
+   align-items:center;
+   text-align: center;
+   
+}
+li{
+    list-style-type: none;
+}
+
+.foto{
+    width: 324px;
+    border: 5px solid;
+    border-radius: 50%;
+    
+}
+.foto:hover{    
+    border: 5px solid rgb(1, 61, 1);
+    border-radius: 50%;
+}
+
+/* footer */
+footer{
+    width: 100vw;
+    height: 3.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fffafa;
+    
+}
+footer div{    
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 50px;
+}
+
+
