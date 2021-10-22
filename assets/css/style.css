@@ -9,13 +9,14 @@
 
 }
 body{
-    background-color: #102c2f;
+    background-color: #b1aeae;
     
 }
 header{
     margin: 0;
-    width: 100vw;
-    background-color: #fffafa;    
+    width: 100%;
+    height: 50px;
+    /* background-color: #fffafa;     */
 }
 
 .menu{    
@@ -23,7 +24,7 @@ header{
     justify-content:space-around;    
     list-style: none;   
     margin: 0;
-    height: 4.5em;
+    height:100%;
     align-items: center;
     padding: 0;
     
@@ -79,19 +80,35 @@ li{
 /* footer */
 footer{
     width: 100vw;
-    height: 3.5rem;
+    height: 3rem;
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: #fffafa;
     
 }
-footer div{    
+footer {    
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
 }
+footer a {
+    margin-right: 30px;
+}
+
 img{
-    width: 50px;
+    width: 40px;
+}
+/* video */
+.video{
+    margin-top: 2em;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video h2{
+    margin-bottom: 0.5em;
 }
 
 
