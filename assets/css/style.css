@@ -41,7 +41,7 @@ header{
 }
 /* sobre */
 h1{
-    padding-top: 1em;
+    padding-top: 0.5em;
     text-align: center;
     font-size: 89px;
     
@@ -110,5 +110,15 @@ img{
 .video h2{
     margin-bottom: 0.5em;
 }
+                        /* Página de contato */
+.contato{
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    
 
+}
+.form-contato{
+
+}
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Contato</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
 
     <header>
@@ -27,26 +29,31 @@
     </header>
 
     <h1>Entre em contato comigo</h1>
-    
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome">
-        <br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email">
-        <br><br>
-        <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-        <br><br>
-        <button>Enviar</button>
-    </form>
 
-    <h2>Endereço:</h2>
+    <main class="contato">
+        <form class="form-contato">
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="assunto">Assunto:</label><br>
+            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+            <br><br>
+            <button>Enviar</button>
+        </form>
 
-    <p>Rua Tito, 54</p>
-    <p>São Paulo - SP</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1242819877484!2d-46.69400274897395!3d-23.528031966173348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1634750556922!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="endereco">
+            <h2>Endereço:</h2>
 
+            <p>Rua Tito, 54</p>
+            <p>São Paulo - SP</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1242819877484!2d-46.69400274897395!3d-23.528031966173348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1634750556922!5m2!1spt-BR!2sbr"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
     <footer>
         <div>
             <a href="https://www.github.com/matheusmmonteiro">
@@ -61,4 +68,5 @@
     </footer>
 
 </body>
+
 </html>
