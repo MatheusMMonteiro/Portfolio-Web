@@ -8,75 +8,99 @@
     <title>Meu perfil</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <ul class="menu">
-            <li>
-                <a href="index.html" class="a-menu">Home</a>
-            </li>
-            <li>
-                <a href="contato.html" class="a-menu">Contato</a>
-            </li>
-            <li>
-                <a href="contato.html" class="a-menu">Contato</a>
-            </li>
-            <li>
-                <a href="contato.html" class="a-menu">Contato</a>
-            </li>
-        </ul>
+
+        <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="contato.html" tabindex="-1" aria-disabled="true">Feature</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
 
-    <h1>Sobre o Matheus</h1>
+    <h1 class="text-center p-5">Sobre o Matheus</h1>
 
-    <main class="main-conteiner center-margin">
-        <div>            
-            <p>Estudando Bootcamp Desenvolvimento FullStack Java na Generation Brasil e Técnico em Informática no Senac
-                Lapa
-                Tito.
-            </p>
-            <p>
-                Habilidades e Fundamentos em Lógica de Programação, Modelagem de Banco de Dados, Metodologia Ágil SCRUM
-                e
-                Montagem e Manutenção de Hardwares e Softwares.
-            </p>
-            </p> Fui responsável por ensinar tecnologia e informática básica à senhoras de idade.
-            </p>
-        </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-7">
+                <p>Estudando Bootcamp Desenvolvimento FullStack Java na Generation Brasil e Técnico em Informática no
+                    Senac
+                    Lapa Tito.
+                </p>
+                <p>
+                    Habilidades e Fundamentos em Lógica de Programação, Modelagem de Banco de Dados, Metodologia Ágil
+                    SCRUM
+                    e
+                    Montagem e Manutenção de Hardwares e Softwares.
+                </p>
+                </p> Fui responsável por ensinar tecnologia e informática básica à senhoras de idade.
+                </p>
+            </div>
 
-        <div>
-            <img src="assets/img/matheus.jpg" alt="Foto criador desse conteúdo" class="foto">
-            <h4>Desenvolvedor FullStack Java Júnior</h4>
+            <div class="col text-center">
+                <img src="assets/img/matheus.jpg" alt="Foto criador desse conteúdo" class="rounded-circle w-25 mb-3">
+                <h4>Desenvolvedor FullStack Java Júnior</h4>
+            </div>
+
         </div>
 
     </main>
 
-    <nav class="video">
-        <h2>Meu video predileto:</h2>
+    <nav class="mt-5 mb-5 w-100 d-flex flex-column align-items-center">
+        <h2 class="mb-3">Meu video predileto:</h2>
 
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/7Tl4RGRUzxY" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        <iframe width="300" height="250" src="https://www.youtube.com/embed/7Tl4RGRUzxY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
     </nav>
-    
-
-    <footer>
-     
-            <a href="https://www.github.com/matheusmmonteiro" class="icons" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-            </a>
 
 
-            <a href="https://www.linkedin.com/in/matheus-monteiro-41b54a181/" class="icons" target="_blank">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain-wordmark.svg" />
-            </a>
-       
+    <footer class="footer fixed-bottom bg-success d-flex justify-content-end align-items-center">
+
+        <a href="https://www.github.com/matheusmmonteiro" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                class="icons mr-3" />
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/matheus-monteiro-41b54a181/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain-wordmark.svg"
+                class="icons mr-3" />
+        </a>
+
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
 </body>
 
