@@ -62,12 +62,12 @@ function enviar(){
 }
 
 function mapaZoom(){
-    mapa.style.width = '800px'
-    mapa.style.width = '600px'
+    mapa.style.width = '660px'
+    mapa.style.height = '400px'
 }
 function mapaNormal(){
     
-    mapa.style.width = '400px'
-    mapa.style.width = '250px'
+    mapa.style.width = '600px'
+    mapa.style.height = '250px'
 
 }
