@@ -1,104 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
     <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-</head>
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
 
+  <body>
     <header>
-
-        <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="contato.html" tabindex="-1" aria-disabled="true">Feature</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+        
+        <div
+          class="collapse navbar-collapse d-flex justify-content-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Página Inicial <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item font-weight-bolder active">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="contato.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >Feature</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <h1 class="mt-5 text-center">Entre em contato comigo</h1>
 
-    <main class="contato container-fluid d-flex align-items-center justify-content-around">
-        <div class="col-5 mt-5">
-            <form class="form-group d-flex flex-column container-fluid col-10">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" name="nome" id="nome" onkeyup="validaNome()">
-                <div id="txtNome"></div>
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" name="email" id="email" onkeyup="validaEmail()">
-                <div id="txtEmail"></div>
-                <label for="assunto">Assunto:</label>
-                <textarea name="assunto" class="form-control" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
-                <div id="txtAssunto"></div>
-                <button onclick="enviar()" type="button" class="mt-2 btn btn-outline-primary ">Enviar</button>
-            </form>
-        </div>
+    <main
+      class="
+        contato
+        container-fluid
+        d-flex
+        align-items-center
+        justify-content-around
+      "
+    >
+      <div class="col-5 mt-5">
+        <form class="form-group d-flex flex-column container-fluid col-10">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            class="form-control"
+            name="nome"
+            id="nome"
+            onkeyup="validaNome()"
+          />
+          <div id="txtNome"></div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            onkeyup="validaEmail()"
+          />
+          <div id="txtEmail"></div>
+          <label for="assunto">Assunto:</label>
+          <textarea
+            name="assunto"
+            class="form-control"
+            id="assunto"
+            cols="30"
+            rows="10"
+            onkeyup="validaAssunto()"
+          ></textarea>
+          <div id="txtAssunto"></div>
+          <button
+            onclick="enviar()"
+            type="button"
+            class="mt-2 btn btn-outline-primary"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
 
-        <div class="endereco">
-            <h2>Endereço:</h2>
+      <div class="endereco">
+        <h2>Endereço:</h2>
 
-            <p>Rua Tito, 54</p>
-            <p>São Paulo - SP</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1242819877484!2d-46.69400274897395!3d-23.528031966173348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1634750556922!5m2!1spt-BR!2sbr"
-                width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" id="mapa"
-                onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
-        </div>
+        <p>Rua Epitalâmios, 515A</p>
+        <p>São Paulo - SP</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.2908850011863!2d-46.71817038501899!3d-23.73700428459602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4efb1981b229%3A0xfb9916948e596ca3!2sR.%20Epital%C3%A2mios%2C%20515%20-%20Parque%20Santa%20Cecilia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004832-150!5e0!3m2!1spt-BR!2sbr!4v1635981757807!5m2!1spt-BR!2sbr"
+          width="600"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          id="mapa"
+          onmousemove="mapaZoom()"
+          onmouseout="mapaNormal()"
+        ></iframe>
+      </div>
     </main>
 
     <div class="m-5"></div>
-    <footer class=" bg-success d-flex justify-content-end align-items-center">
+    <footer class="bg-success d-flex justify-content-end align-items-center">
+      <a href="https://www.github.com/matheusmmonteiro" target="_blank">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+          class="icons mr-3"
+        />
+      </a>
 
-        <a href="https://www.github.com/matheusmmonteiro" target="_blank">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                class="icons mr-3" />
-        </a>
-
-
-        <a href="https://www.linkedin.com/in/matheus-monteiro-41b54a181/" target="_blank">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain-wordmark.svg"
-                class="icons mr-3" />
-        </a>
-
+      <a
+        href="https://www.linkedin.com/in/matheus-monteiro-41b54a181/"
+        target="_blank"
+      >
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain-wordmark.svg"
+          class="icons mr-3"
+        />
+      </a>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="assets/js/script.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>

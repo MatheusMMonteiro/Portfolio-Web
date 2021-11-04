@@ -9,3 +9,10 @@
 footer{
     height: 3rem;
 }
+.carrosel{
+    height: 60vh;
+}
+.espaco{
+    width: 100%;
+    height: 7vh;
+}
